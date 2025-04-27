@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - Super Strikas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* your existing CSS — unchanged, keeping it intact */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffe259, #ffa751);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .live-strip {
+      background: #222;
+      color: #ffd700;
+      padding: 10px 0;
+      font-weight: 600;
+    }
+
+    .live-strip marquee {
+      font-size: 16px;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #0072ff;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 2px solid #0072ff;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Super Strikas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Product Services.html">Product Services</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="live-strip">
+    <marquee behavior="scroll" direction="left">
+      📞 Get in touch with us for custom jerseys & orders! | 📧 Email: info@superstrikas.com | ⚽ Call: +91-8160135241
+    </marquee>
+  </div>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="button" onclick="sendMessage()">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Super Strikas. All rights reserved.</p>
+    <p style="margin-top: 8px; font-size: 14px; color: #eee;">
+      Made with ❤️ by Parth Modi
+  </footer>
+  
+
+  <script>
+    function sendMessage() {
+      var userName = document.getElementById("name").value;
+      var userEmail = document.getElementById("email").value;
+      var userMessage = document.getElementById("message").value;
+
+      if (userName === "" || userEmail === "" || userMessage === "") {
+        alert("Please fill all the fields before sending.");
+      } else {
+        alert("Thank you " + userName + "! Your message has been sent.");
+        // Optional: Clear the form after sending
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+      }
+    }
+  </script>
+
+</body>
+</html>

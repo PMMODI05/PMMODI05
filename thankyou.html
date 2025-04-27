@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You - Super Strikas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffe259, #ffa751);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .live-strip {
+      background: #222;
+      color: #ffd700;
+      padding: 10px 0;
+      font-weight: 600;
+      overflow: hidden;
+    }
+
+    .live-strip marquee {
+      font-size: 16px;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      border-radius: 15px;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ffe0e6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Super Strikas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Product Services.html">Product Services</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Live Update Strip -->
+  <div class="live-strip">
+    <marquee behavior="scroll" direction="left">
+      🔥 Breaking: Real Madrid wins El Clasico! | ⚽ New arrivals: Latest Adidas boots in store now! | 🎯 Big Sale: Up to 40% off on jerseys this week! | 🚀 Messi scores 2 goals in Champions League quarterfinal!
+    </marquee>
+  </div>
+
+  <main>
+    <div class="hero">
+      <h2>Thank You for Contacting Us!</h2>
+      <p>Your message has been successfully sent. We will get back to you as soon as possible.</p>
+    </div>
+
+    <section class="products">
+      <h2>While You Wait, Check Out Our Products!</h2>
+      <div class="card-container">
+        <div class="product-card">
+          <img src="Nike Mercurial Vapor.avif" alt="Football Shoes">
+          <h3>Nike Mercurial Vapor</h3>
+          <p>Elite-level studs for speed & control.</p>
+        </div>
+        <div class="product-card">
+          <img src="Adidas Match Ball.avif" alt="Football">
+          <h3>Adidas Match Ball</h3>
+          <p>Official UEFA Champions League football.</p>
+        </div>
+        <div class="product-card">
+          <img src="Real Madrid Jersey 24-25.webp" alt="Club Jersey">
+          <h3>Real Madrid Jersey 24/25</h3>
+          <p>Premium home kit with embroidered logo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2>Best Match Highlights</h2>
+      <a href="https://youtu.be/RUVohRXP8v0?si=mLS8g_HCAnZhtdQH" target="_blank">
+        <img src="mun match.jpeg" alt="Manchester United vs Lyon Highlights" style="width:100%; max-width:560px; border-radius:10px;">
+      </a>
+      <a href="https://youtu.be/4rp2aLQl7vg?si=F6y0C1F3WQxIhkly" target="_blank">
+        <img src="portugal.jpeg" alt="Portugal v Spain | 2018 FIFA World Cup | Match Highlights" style="width:100%; max-width:560px; border-radius:10px;">
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Super Strikas. All rights reserved.</p>
+    <p style="margin-top: 8px; font-size: 14px; color: #eee;">
+      Made with ❤️ by Parth Modi
+    </p>
+  </footer>
+  
+
+</body>
+</html>

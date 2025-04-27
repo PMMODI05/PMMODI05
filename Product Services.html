@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Services - Super Strikas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      background: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero-images {
+      display: flex;
+      gap: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-images a {
+      flex: 1 1 50%;
+      max-width: 50%;
+      display: block;
+    }
+
+    .hero-images img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-text {
+      margin-top: 30px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 900;
+      margin: 10px 0;
+      color: #000;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .shop-button {
+      display: inline-block;
+      background: #000;
+      color: #ffffff;
+      padding: 12px 30px;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .shop-button:hover {
+      background: #333;
+      color: #ffeb3b;
+    }
+
+    .products-section {
+      background: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .products-section h2 {
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #222;
+    }
+
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border: 2px solid #ffd700;
+      border-radius: 15px;
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin-top: 15px;
+      font-size: 24px;
+      color: #0072ff;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Super Strikas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Product Services.html">Product Services</a></li>
+        <li><a href="Contact Us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-images">
+        <a href="Product Services.html">
+          <img src="kylian mbappe.png" alt="Ad 1">
+        </a>
+        <a href="Product Services.html">
+          <img src="nike shoe 1.jpeg" alt="Ad 2">
+        </a>
+      </div>
+      <div class="hero-text">
+        <h1>THE DREAM IS REAL</h1>
+        <p>Every goal is within reach in the Kylian Mbappé Mercurial Superfly.</p>
+        <a href="https://www.nike.com/in/w/football-1gdj0" class="shop-button">Shop</a>
+      </div>
+    </div>
+
+    <section class="products-section">
+      <h2>Featured Products</h2>
+      <div class="products-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <a href="https://www.nike.com/in/t/jr-mercurial-superfly-10-academy-kylian-mbappe-younger-older-mg-high-top-football-boot-pcfVP7/HF3417-500"><img src="shoe1.avif" alt="Nike Mercurial Boots"></a>
+          <h3>Nike Jr. Mercurial Superfly 10 Academy 'Kylian Mbappé'</h3>
+          <p>MRP : ₹ 7 495.00</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <a href="https://www.adidas.co.in/predator-edge.3-firm-ground-boots/GW2360.html"><img src="shoe2.avif" alt="Adidas Predator Boots"></a>
+          <h3>Adidas Predator Edge</h3>
+          <p>MRP : ₹ 2 240.00 </p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <a href="https://shop.realmadrid.com/en-es/product/rmcfmz0196-mens-home-authentic-shirt-24-25-white"><img src="realmadridtshirt.webp" alt="Real Madrid Kit 2024"></a>
+          <h3>Real Madrid 24/25 Kit</h3>
+          <p>MRP : ₹ 14,558.70</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <a href="https://store.manutd.com/en/p/manchester-united-2425-home-jersey-with-garnacho-17-epl-printing-and-badge-2092"><img src="manchesterunitedtshirt.avif" alt="Manchester United Kit 2024"></a>
+          <h3>Manchester United 24/25 Kit</h3>
+          <p>MRP : ₹ 5,160.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.nike.com/in/t/mercurial-superfly-10-academy-mg-high-top-football-boot-RBK0MH/FQ1456-800"><img src="shoe3.avif" ></a>
+          <h3>Nike Mercurial Superfly 10 Academy</h3>
+          <p>MRP : ₹ 8 995.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.nike.com/in/t/phantom-luna-2-elite-fg-high-top-football-boot-kvD5sX/FJ2572-100"><img src="shoe4.avif" ></a>
+          <h3>Nike Phantom Luna 2 Elite</h3>
+          <p>MRP : ₹ 22 607.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.nike.com/in/t/mercurial-superfly-10-elite-fg-high-top-football-boot-Snwv27/FQ1454-400"><img src="shoe5.avif"></a>
+          <h3>Nike Mercurial Superfly 10 Elite</h3>
+          <p>MRP : ₹ 23 795.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.adidas.co.in/copa-pure-3-club-firm-multi-ground-boots/IE1173.html"><img src="shoe6.avif" ></a>
+          <h3>Copa Pure 3 Club Firm/Multi-Ground Boots</h3>
+          <p>MRP : ₹5 599.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.nike.com/in/t/kylian-mbappe-academy-football-BtBPWH/HJ7028-585"><img src="football1.avif" ></a>
+          <h3>Kylian Mbappé Academy
+            Nike Football</h3>
+          <p>MRP : ₹ 1 995.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.nike.com/in/t/match-goalkeeper-football-gloves-6sk03r/HQ0257-395"><img src="gloves1.avif" ></a>
+          <h3>Nike Match
+            Goalkeeper Football Gloves</h3>
+          <p>MRP : ₹ 1 795.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.adidas.co.in/tiro-league-thermally-bonded-ball/HT2429.html"><img src="football2.avif" ></a>
+          <h3>Tiro League Thermally Bonded Ball</h3>
+          <p>MRP : ₹2 999.00</p>
+        </div>
+
+        <div class="product-card">
+          <a href="https://www.adidas.co.in/juventus-24-25-home-socks/IS8004.html"><img src="socks1.avif" ></a>
+          <h3>Juventus 24/25 Home Socks</h3>
+          <p>MRP : ₹2 299.00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Super Strikas. All rights reserved.</p>
+    <p style="margin-top: 8px; font-size: 14px; color: #eee;">
+      Made with ❤️ by Parth Modi
+    </p>
+  </footer>
+  
+
+</body>
+</html>
